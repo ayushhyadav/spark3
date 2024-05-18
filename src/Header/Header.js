@@ -129,7 +129,7 @@ function Header({ cartCount }) {
                 </ul>
               </div>
             </div>
-            <div className="shopping-bag" style={{  position: 'relative' }}>
+            <div className="shopping-bag" style={{  position: 'relative' ,marginLeft:20}}>
               <div  style={{ display: 'flex', alignItems: 'center' }}>
                 <div className="bag-icon"
                   style={{
