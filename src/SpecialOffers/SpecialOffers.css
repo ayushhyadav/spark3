@@ -1,0 +1,29 @@
+h1.prodect-heading {
+    font-size: 46px;
+    margin-bottom: 60px;
+}
+
+span.badge.bg-secondary {
+    margin: 14px;
+}
+
+.items-prodects .badge.bg-secondary {
+    background-color: transparent !important;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.items-prodects p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.items-prodects span {
+    font-size: 16px;
+    font-weight: 600;
+}
+

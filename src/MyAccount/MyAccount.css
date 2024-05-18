@@ -1,0 +1,61 @@
+.account-info .form-control {
+    border-bottom: 1px solid;
+    border-radius: revert;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.account-info.phone {
+    margin-top: 30px;
+    max-width: 50%;
+}
+
+.forminfo-btn {
+    float: right;
+    margin: 30px 0;
+}
+
+.forminfo-btn .btn.bd-outline {
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 6px 30px;
+    font-weight: 600;
+}
+
+.forminfo-btn .btn.bg-gray {
+    background-color: #323232;
+    margin-left: 20px;
+    border-radius: 25px;
+    padding: 6px 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.account-info .form-control:focus {
+    box-shadow: none;
+}
+
+address.MyAccount h2 {
+    font-size: 23px;
+    font-weight: 700;
+    margin: 30px 0 16px;
+}
+
+.loging-email {
+    margin: 30px 0;
+}
+
+@media screen and (max-width: 576px){
+    .forminfo-btn .btn.bg-gray {
+        margin-left: auto;
+        margin-top: 10px;
+    }
+    .account-info.phone {
+        margin-top: auto;
+    }
+    .forminfo-btn .btn.bd-outline {
+        margin-top: 10px;
+        margin-right: 13px;
+    }
+}

@@ -1,0 +1,860 @@
+.main2 {
+    width: 100%;
+    height: auto;
+
+    min-height: 460px;
+    background-color: #f0f0f0;
+    background-attachment: fixed;
+}
+
+section.stacking-slide lable {
+    position: absolute;
+    bottom: 7%;
+    left: 5%;
+    color: #f0f0f0;
+}
+.brands-hesding {
+    position: relative;
+}
+.main-sub-con a:hover {
+    text-decoration: none;
+}
+.offer-heading a:hover {
+    background-color: #323232;
+    color: #fff;
+}
+@font-face {
+    font-family: 'Font-Helvetica-bold';
+    src: url('../Font/Helvetica-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Font-Helvetica';
+    src: url('../Font/Helvetica.ttf');
+}
+
+@font-face {
+    font-family: 'Font-Helvetica-Thin';
+    src: url('../Font/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Font-Helvetica-light';
+    src: url('../Font/Roboto-Thin.ttf');
+}
+
+.main2-head {
+    font-size: xx-large;
+    font-weight: 600;
+    /* padding: 0px; */
+    padding-top: 130px;
+    padding-left: 40px;
+
+}
+
+.main3 {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 45px;
+    width: 100%;
+}
+
+.main3-p {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 0px 0px 0px;
+    color: #323232;
+    font-family: 'Font-Helvetica-bold';
+
+}
+
+.main4 {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-attachment: fixed;
+
+}
+
+.main-sub4-p {
+    font-size: 28px;
+    font-weight: 700;
+    color: #323232;
+
+
+}
+
+.main-sub4 {
+    padding-top: 150px;
+    padding-right: 45px;
+    padding-left: 35px;
+}
+
+.main-sub4-btn {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #323232;
+    border-radius: 60px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.offer-heading {
+    margin-top: 10%;
+    padding: 0 3%;
+}
+
+.offer-heading h1 {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 85px;
+    color: #323232;
+    font-family: 'Font-Helvetica-bold';
+
+}
+
+.offer-heading a {
+    border: 1px solid #323232;
+    padding: 23px 40px;
+    border-radius: 35px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Font-Helvetica-bold';
+
+}
+
+.main-sub4-btn:hover {
+    background-color: #323232;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.main5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 45px;
+}
+
+.img-btn {
+    border: 1px solid #323232;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 35px 0px 35px;
+    margin: 20px 20px;
+    font-weight: 300;
+    max-width: 60px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    font-family: 'Font-Helvetica-thin';
+}
+
+.main-sub5 a {
+    display: block;
+    font-weight: 500;
+    font-family: 'Font-Helvetica-bold';
+
+}
+
+.prodect-items {
+    margin-bottom: 30%;
+}
+
+.img-btn:hover {
+    color: #323232;
+    text-decoration: none;
+    color: black;
+
+}
+
+.main-sub5 img {
+    filter: grayscale(6);
+}
+
+.main-sub5 img:hover {
+    filter: none;
+}
+
+.mainsub-6 {
+    width: 30%;
+    margin-left: 40px;
+    padding-top: 60px;
+    position: absolute;
+    top: 0;
+}
+
+.main6 {
+    position: relative;
+}
+
+.mainsub-6-para {
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 300;
+    color: white;
+}
+
+.mainsub-6-p {
+    color: white;
+    font-size: 25px;
+    margin-top: 110px;
+}
+
+.mainsub-6-p1 {
+    color: white;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.mainsub6-btn {
+    width: 150px;
+    height: 45px;
+    background-color: white;
+    color: #323232;
+    border-radius: 45px;
+    padding: 10px 15px 8px 15px;
+    border: 1px solid #323232;
+    font-weight: 700;
+    margin-top: 30px;
+
+}
+
+.mainsub6-btn:hover {
+    background-color: #323232;
+    border: 1px solid white;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.main7 {
+    background-image: url("../../public/assets/Yellow_Headphones.webp");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    margin-bottom: 30px;
+    background-position: center;
+    position: relative;
+}
+
+.main8-sub1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.main8-para {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 100px;
+    color: #323232;
+    font-family: 'Font-Helvetica-bold';
+
+}
+
+.main8sub-para1 {
+    font-size: 35px;
+    color: #696969;
+    font-family: Mukta;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* =================== */
+.vertical-scroll-snap {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    max-height: 100vh;
+}
+
+.main-sub-con h6 {
+    font-family: 'Font-Helvetica-Thin' !important;
+
+}
+
+section.stacking-slide h2 {
+    position: absolute;
+    color: #f0f0f0;
+    max-width: 450px;
+    margin: 5% 0 0 5%;
+    font-size: 42px;
+    font-weight: 300;
+    font-family: 'Font-Helvetica';
+
+}
+
+section.stacking-slide a:hover {
+    background-color: #323232;
+    color: #f0f0f0;
+}
+
+.stacking-slide p {
+    position: absolute;
+    color: #fff;
+    margin: 5% 0 0 5%;
+    font-size: 22px;
+    font-weight: 300;
+    top: 28%;
+    font-family: 'Font-Helvetica';
+
+}
+
+section.stacking-slide a {
+    position: absolute;
+    color: #323232;
+    margin: 5% 0 0 5%;
+    font-size: 14px;
+    top: 38%;
+    background-color: #f0f0f0;
+    padding: 12px 45px;
+    border-radius: 25px;
+    border: 1px solid #f0f0f0;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Font-Helvetica-bold';
+
+
+}
+
+.stacking-slide {
+    scroll-snap-align: start;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+    &:nth-last-child(1) {
+        height: 100vh;
+    }
+}
+
+
+
+
+
+
+.main8sub-para2 {
+    font-size: 35px;
+    color: #676767;
+    font-family: Calibri;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+.main8sub-para3 {
+    font-size: 35px;
+    color: #696969;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.main8sub-para4 {
+    font-size: 35px;
+    color: #696969;
+    font-family: fantasy;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.main8sub-para5 {
+    font-size: 35px;
+    color: #696969;
+    font-family: Calibri;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+
+}
+
+.brand-img img {
+    max-width: 290px;
+    margin: 0 auto;
+}
+
+.main {
+    background-attachment: fixed;
+
+}
+
+.panels {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.panel {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.main-sub-con {
+    height: 100vh;
+    /* margin-top: 150px; */
+
+}
+
+.main-sub1-para {
+    font-size: 48px;
+    line-height: 55px;
+    padding-left: 30px;
+    color: #323232;
+    font-weight: 350;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-sub1-para2 {
+    font-size: 25px;
+    padding-top: 30px;
+    color: #4b4b4b;
+    font-weight: 100;
+    margin-left: 30px;
+}
+
+a.main-sub1-btn {
+    width: 155px;
+    height: 48px;
+    border: 1px solid #323232;
+    border-radius: 70px;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 18px;
+    display: block;
+    padding: 10px 39px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.main-sub1-btn:hover {
+    font-weight: 700;
+    color: white;
+    background-color: #323232;
+    transition: step-start;
+    transition: background-color 0.5s;
+}
+
+.div-arr {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    color: #323232;
+    font-family: 'Font-Helvetica-bold';
+
+
+}
+
+.main-sub3 a {
+    font-size: 18px;
+}
+
+.img-para {
+    font-weight: 500;
+    padding-top: 15px;
+    margin-bottom: 70px;
+}
+
+
+.main-sub3 {
+    width: auto;
+    height: 250px;
+    background-color: #323232;
+    color: #f0f0f0;
+    margin-top: -145px;
+    position: relative;
+    padding-top: 30px;
+
+}
+
+.main-sub3-para {
+    font-size: 27px;
+    padding-left: 30px;
+    font-weight: 300;
+}
+
+.main-sub1-img {
+    margin-left: 10px;
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 300px;
+    position: relative;
+}
+
+
+.main-sub1-img img {
+    width: 100%;
+    background-size: cover;
+    filter: grayscale(2);
+    /* transition: filter 0.3s ease; Add transition for smooth effect */
+}
+
+.main-sub1-img img:hover {
+    /* filter: brightness(100%); Reduce brightness on hover */
+    /* filter: grayscale(30%) */
+    filter: none;
+    cursor: pointer;
+}
+
+
+
+a.main-sub3-btn.btn:focus {
+    box-shadow: none;
+}
+
+a.main-sub3-btn {
+    width: 160px;
+    height: 48px;
+    border-radius: 70px;
+    background-color: #e9e9e9;
+    font-weight: 700;
+    color: #323232;
+    font-size: 18xpx;
+    border: 1px solid;
+    margin-left: 30px;
+    margin-top: 20px;
+    display: block;
+    padding: 8px 43px;
+
+}
+
+.main-sub3-btn:hover {
+    color: white;
+    background-color: #323232;
+    transition: background-color 0.5s;
+}
+
+/* Add these styles to your existing CSS */
+
+.second-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.second-image img {
+    width: 100%;
+    height: auto;
+}
+
+.second-image.show {
+    opacity: 1;
+}
+
+.bg-category {
+    background-color: #e9e9e9;
+    padding: 50px;
+}
+
+.bg-category h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    color: #323232;
+    font-family: 'Font-Helvetica-bold';
+
+}
+.brands-hesding p {
+    font-size: 33px;
+    margin-top: 10%;
+    font-family: 'Font-Helvetica-bold';
+    margin-left: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    .panels {
+        display: none;
+    }
+    .main-banrand {
+        justify-content: end;
+        flex-wrap: wrap;
+    }
+
+    .main-sub1-para {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .main-sub1-para2 {
+        font-size: 20px;
+        padding-top: 30px;
+
+    }
+
+    .main-sub1-para {
+        padding-right: 5px;
+        font-size: 33px;
+    }
+
+    .main-sub1-btn {
+        margin-top: 15px;
+    }
+
+    .div-arr {
+        font-size: 24px;
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .img-para {
+        font-size: 16px;
+    }
+
+    .main-sub3 {
+        margin-top: 320px;
+    }
+
+    .main-sub3-para {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .main-sub3-btn {
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .main2-head {
+        padding-top: 70px;
+        padding-left: 20px;
+        font-size: large;
+    }
+
+    .main3 {
+        padding: 25px;
+    }
+
+    .main3-p {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .main4 {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .main-sub4 {
+        padding-top: 50px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .main5 {
+        padding-left: 15px;
+    }
+
+    .main8-para {
+        font-size: 24px;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .main8-sub1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 90px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        line-height: 0px;
+    }
+
+    .main8sub-para1,
+    .main8sub-para3,
+    .main8sub-para4,
+    .main8sub-para5 {
+        font-size: 24px;
+    }
+
+    .main8sub-para2 {
+        font-size: 20px;
+    }
+
+    .main-sub-con {
+        width: 100%;
+
+    }
+
+    .main-sub3 {
+        margin-top: 123px;
+
+    }
+
+    .main8 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main7 {
+        background-image: url("../../public/assets/img-ag2.webp");
+        width: 100%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+
+    .main6 {
+        background-image: url("../../public/assets/img-ag1.webp");
+        width: 100%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+
+
+    }
+
+    .mainsub-6 {
+        width: 88%;
+
+    }
+
+    .mainsub-6-para {
+        width: 100%;
+        font-size: 30px;
+        margin-left: -40px;
+        padding-left: 30px;
+    }
+
+    .mainsub-6-p {
+
+        margin-top: 30px;
+    }
+
+    .mainsub-6-p1 {
+        margin-top: 80px;
+    }
+
+    .bg-category {
+        padding: 40px 5px;
+    }
+
+    .bg-category h1 {
+        margin-bottom: 40px;
+    }
+
+    .offer-heading a {
+        max-width: 160px;
+    }
+
+    .offer-heading h1 {
+        margin-bottom: 20px;
+    }
+
+    .offer-heading a {
+        max-width: 160px;
+        margin-bottom: 50px;
+    }
+
+    .bg-category h1 {
+        font-size: 22px;
+
+    }
+
+    .bg-category h1 {
+        margin-bottom: 30px;
+    }
+
+    .main2-sub {
+        margin-bottom: 50px;
+    }
+
+    .bg-category {
+        padding: 20px 5px;
+    }
+
+    .offer-heading h1 {
+        font-size: 22px;
+    }
+
+    .offer-heading a {
+        max-width: 138px;
+        margin-bottom: 50px;
+    }
+
+    .offer-heading a {
+        padding: 19px 30px;
+        font-size: 14px;
+    }
+
+    .prodect-items {
+        margin-bottom: 18%;
+    }
+
+    section.stacking-slide h2 {
+        font-size: 33px;
+    }
+
+    .stacking-slide p {
+        top: 18%;
+    }
+
+    section.stacking-slide a {
+        top: 30%;
+    }
+
+    .item-brand {
+        flex-wrap: wrap;
+    }
+    .stacking-slide p {
+        font-size: 18px;
+        top: 13%;
+      }
+      section.stacking-slide a {
+        top: 18%;
+    }
+    section.stacking-slide a {
+        padding: 12px 25px;
+    }
+    .brand-img img {
+        max-width: 190px;
+        margin: 0 auto;
+    }
+    .brands-hesding p {
+        font-size: 28px;
+        margin-left: 19px;
+        position: absolute;
+        transform: translate(0%, 58%);
+    }
+
+
+}
+
+@media screen and (max-width: 1280px) and (min-width: 769px) {
+    .brand-img img {
+        max-width: 100%;
+    }
+    .brands-hesding p {
+        margin-left: 0px;
+    }
+}

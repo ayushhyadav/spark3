@@ -1,0 +1,149 @@
+.help-center {
+    padding-top: 10%;
+}
+
+.help h1 {
+    font-size: 54px;
+    font-family: 'Font-Helvetica-Thin';
+    padding-bottom: 40px;
+}
+
+.help2 p {
+    font-size: 18px;
+}
+
+hr.border-center {
+    border: 1px solid #acacac;
+}
+
+.spaceing-box {
+    padding: 20px 15px;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.help2 p {
+    padding-bottom: 50px;
+    font-family: 'Font-Helvetica-bold';
+}
+
+.help3-sub h4 {
+    font-size: 17px;
+    color: #323232;
+    font-family: 'Font-Helvetica-bold';
+}
+
+.help-per p {
+    color: #323232;
+    font-size: 17px;
+    font-family: 'Font-Helvetica-Thin';
+    max-width: 570px;
+    margin-bottom: 60px;
+}
+
+.form-contact {
+    background-color: #f0f0f0;
+}
+
+h1.contact-head {
+    font-size: 32px;
+    color: #323232;
+    font-family: 'Font-Helvetica-bold';
+
+}
+
+
+label.contact-label {
+    font-size: 14px;
+    color: #323232;
+    font-family: 'Font-Helvetica-bold';
+
+}
+.main-hesding p {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+input.form-control.contact-input.sml {
+    height: 56px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid #323232;
+}
+.form-row.spaces {
+    margin-bottom: 20px;
+}
+input.form-control.contact-input.max{
+    height: 56px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid #323232;
+}
+button.form-btn.bg-gray {
+    background-color: #323232;
+    border-radius: 25px;
+    padding: 14px 50px;
+    font-weight: 600;
+    color: #fff;
+    margin: 30px 0px 80px;
+    font-family: 'Font-Helvetica-bold';
+
+}
+input.form-control.contact-input:hover {
+    border: 2px solid #000;
+}
+input.form-control.contact-input:focus {
+    box-shadow: none;
+}
+
+
+
+@media screen and (max-width: 567px){
+    input.form-control.contact-input.max {
+        height: 130px;
+    }
+    input.form-control.contact-input.sml {
+        margin-bottom: 25px;
+    }
+    .form-row.spaces {
+        margin-bottom: 0px;
+    }
+    .help-center {
+        padding-top: 35%;
+    }
+    .help h1 {
+        font-size: 32px;
+    }
+    .spaceing-box {
+        max-width: 330px;
+    }
+    .help3-sub h4 {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .help-per p {
+        max-width: 570px;
+    }
+    h1.contact-head {
+        font-size: 23px;
+    }
+    form.contact-form {
+        margin-top: 50px;
+    }
+    input.form-control.contact-input.sml {
+        height: 45px;
+    }
+    .help2 p {
+        padding-bottom: 10px;
+        font-family: 'Font-Helvetica-bold';
+    }
+    .help-per p {
+        margin-bottom: 20px;
+    }
+    form.contact-form {
+        margin-top: 0px; 
+    }
+    .spaceing-box {
+        padding: 30px 0;
+    }
+}
