@@ -61,7 +61,7 @@ export const ViewCart = ({ onClose }) => {
                 <div className='subtotal2'>
                     <h5>Subtotal</h5>
                     <p>₹{cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)}</p>
-                    <NavLink to='/mycart'>View Cart</NavLink>
+                    <NavLink onClick={handleButtonClick} to='/mycart'>View Cart</NavLink>
                 </div>
                      )}
             </div>
