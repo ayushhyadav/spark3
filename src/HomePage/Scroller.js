@@ -4,7 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from "react-router-dom";
 
 function Scroller() {
-  const categories = ["Cell Phones", "Speakers & Headphones", "Laptops & Tablets"];
   const items = [
     {
       src: "assets/PJX R30.webp",
@@ -188,58 +187,37 @@ function Scroller() {
                 </div>
               </div> */}
 
-<div style={{ position: 'relative', zIndex: 1,  }} className="">
+<div style={{}} className="">
   {headlines.map((headline, index) => (
-    <section style={{ width: '100%', height: '100%' }} key={index} className="stacking-slide">
+    <section style={{ width: '100%', height: '100%',}} key={index} className="stacking-slide">
       {headline.type === "image" && (
-        <img style={{ width: '100%', height: '90vh', objectFit: 'cover' }} src={headline.image} alt="" />
+        <img style={{ width: '100%',height:'90vh', objectFit: 'cover' }} src={headline.image} alt="" />
       )}
-      <div style={{ position: 'relative', zIndex: 1, display: 'flex', height: '100%', flexDirection: 'column' ,flex:1}}>
-        {headline.type === "products" && (
-          <div style={{ width: '100%', backgroundColor: 'white', position: 'relative', height: '100%', padding: 20, margin: '0 auto' ,zindex:1}} className="">
-            <div style={{ fontSize: 25, fontWeight: 600, marginTop: 30 }}>New Arrivals</div>
-            <div style={{ width: '100%', height: '100%', position: 'relative', margin: '0 auto', overflowY: 'auto' }}>
+      {headline.type === "products" && (
+        <div style={{ width: '100%', backgroundColor: 'white', position:'relative',height:'auto' ,padding:20,overflow:'scroll',margin:'0 auto'}} className="">
+         
+            <div style={{fontSize:25,fontWeight:600,marginTop:30}}>New Arrivals</div>
+            <div to='Mobile' style={{ width: '100%', height:'100%', position:'relative',margin:'0 auto' }}>
               {headline.items.map((item, idx) => (
-                <div key={idx} className="product-item" style={{ position: 'relative',}}>
-                  <div style={{ position: 'absolute', color: 'black',}} className="img-btn">SALE</div>
-                  <img src={item.src} alt="" style={{ width: '100%', objectFit: 'cover' }} />
-                  <div className="img-para" style={{ padding: '10px', backgroundColor: '#f5f5f5' }}>
+                <div key={idx} className="">
+                  <div style={{position:'absolute',color:'black',zIndex:1}} className="img-btn absolute">SALE</div>
+                  <img src={item.src} alt="" />
+                  <div className="img-para">
                     <div>{item.title}</div>
                     <div>{item.price}</div>
                   </div>
                 </div>
               ))}
             </div>
-          </div>
-        )}
-      </div>
-      <div>
-     
-      </div>
+        
+        </div>
+      )}
     </section>
   ))}
-  
 </div>
 
 
-<div style={{position:'relative'}}>
-<section className="bg-category">
-        <div >
-          <h1>Shop by Category</h1>
-          <div className="row">
-            {categories.map((category, index) => (
-              <div className="col-md-4">
-                <div className="main2-sub" key={index}>
-                  <img style={{ width: '100%' }} src={`assets/img${index + 1}.webp`} alt="" />
-                  <p className="main3-p">{category}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      </div> 
+   
 
               {/* Small screen content */}
             </div>
@@ -301,23 +279,6 @@ function Scroller() {
                   </div>
                 </div>
               </div>
-
-<div style={{position:'relative'}}>
-       <section className="bg-category">
-        <div className="container">
-          <h1>Shop by Category</h1>
-          <div className="row">
-            {categories.map((category, index) => (
-              <div className="col-md-4">
-                <div className="main2-sub" key={index}>
-                  <img style={{ width: '100%' }} src={`assets/img${index + 1}.webp`} alt="" />
-                  <p className="main3-p">{category}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section></div> 
             </>
           )}
         </div>
