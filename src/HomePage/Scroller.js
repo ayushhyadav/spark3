@@ -187,31 +187,31 @@ function Scroller() {
                 </div>
               </div> */}
 
-<div style={{}} className="">
+<div style={{ position: 'relative', zIndex: 1,  }} className="">
   {headlines.map((headline, index) => (
-    <section style={{ width: '100%', height: '100%',}} key={index} className="stacking-slide">
+    <section style={{ width: '100%', height: '100%' }} key={index} className="stacking-slide">
       {headline.type === "image" && (
-        <img style={{ width: '100%',height:'90vh', objectFit: 'cover' }} src={headline.image} alt="" />
+        <img style={{ width: '100%', height: '90vh', objectFit: 'cover' }} src={headline.image} alt="" />
       )}
-      {headline.type === "products" && (
-        <div style={{ width: '100%', backgroundColor: 'white', position:'relative',height:'auto' ,padding:20,overflow:'scroll',margin:'0 auto'}} className="">
-         
-            <div style={{fontSize:25,fontWeight:600,marginTop:30}}>New Arrivals</div>
-            <div to='Mobile' style={{ width: '100%', height:'100%', position:'relative',margin:'0 auto' }}>
+      <div style={{ position: 'relative', zIndex: 1, display: 'flex', height: '100%', flexDirection: 'column' ,flex:1}}>
+        {headline.type === "products" && (
+          <div style={{ width: '100%', backgroundColor: 'white', position: 'relative', height: '100%', padding: 20, margin: '0 auto' ,zindex:1}} className="">
+            <div style={{ fontSize: 25, fontWeight: 600, marginTop: 30 }}>New Arrivals</div>
+            <div style={{ width: '100%', height: '100%', position: 'relative', margin: '0 auto', overflowY: 'auto' }}>
               {headline.items.map((item, idx) => (
-                <div key={idx} className="">
-                  <div style={{position:'absolute',color:'black',zIndex:1}} className="img-btn absolute">SALE</div>
-                  <img src={item.src} alt="" />
-                  <div className="img-para">
+                <div key={idx} className="product-item" style={{ position: 'relative', marginBottom: '20px' }}>
+                  <div style={{ position: 'absolute', color: 'black', zIndex: 1 }} className="img-btn">SALE</div>
+                  <img src={item.src} alt="" style={{ width: '100%', objectFit: 'cover' }} />
+                  <div className="img-para" style={{ padding: '10px', backgroundColor: '#f5f5f5' }}>
                     <div>{item.title}</div>
                     <div>{item.price}</div>
                   </div>
                 </div>
               ))}
             </div>
-        
-        </div>
-      )}
+          </div>
+        )}
+      </div>
     </section>
   ))}
 </div>

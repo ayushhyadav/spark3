@@ -791,6 +791,7 @@ a.main-sub3-btn {
 
     .bg-category {
         padding: 20px 5px;
+        position:inherit;
     }
 
     .offer-heading h1 {
@@ -836,6 +837,12 @@ a.main-sub3-btn {
       section.stacking-slide a {
         top: 30%;
     }
+    .scroller-container {
+        position: relative;
+        height: auto; 
+        min-height: 256rem;
+        /* overflow: auto; */
+      }
     section.stacking-slide a {
         padding: 12px 25px;
     }
@@ -849,6 +856,28 @@ a.main-sub3-btn {
         position: absolute;
         transform: translate(0%, 58%);
     }
+    .stacking-slide {
+        overflow: hidden;
+        /* height: auto; */
+        /* position: relative; */
+        /* border: 5px solid red; */
+      }
+    
+      .product-item img {
+        width: 100%;
+        height: auto;
+      }
+    
+  
+      @media (max-width: 480px) {
+        .product-item img {
+          height: auto;
+        }
+    
+        .img-para {
+          font-size: 12px;
+        }
+      }
 
 
 }
