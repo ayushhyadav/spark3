@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from "react-router-dom";
 
 function Scroller() {
+  const categories = ["Cell Phones", "Speakers & Headphones", "Laptops & Tablets"];
   const items = [
     {
       src: "assets/PJX R30.webp",
@@ -199,8 +200,8 @@ function Scroller() {
             <div style={{ fontSize: 25, fontWeight: 600, marginTop: 30 }}>New Arrivals</div>
             <div style={{ width: '100%', height: '100%', position: 'relative', margin: '0 auto', overflowY: 'auto' }}>
               {headline.items.map((item, idx) => (
-                <div key={idx} className="product-item" style={{ position: 'relative', marginBottom: '20px' }}>
-                  <div style={{ position: 'absolute', color: 'black', zIndex: 1 }} className="img-btn">SALE</div>
+                <div key={idx} className="product-item" style={{ position: 'relative',}}>
+                  <div style={{ position: 'absolute', color: 'black',}} className="img-btn">SALE</div>
                   <img src={item.src} alt="" style={{ width: '100%', objectFit: 'cover' }} />
                   <div className="img-para" style={{ padding: '10px', backgroundColor: '#f5f5f5' }}>
                     <div>{item.title}</div>
@@ -212,12 +213,33 @@ function Scroller() {
           </div>
         )}
       </div>
+      <div>
+     
+      </div>
     </section>
   ))}
+  
 </div>
 
 
-   
+<div style={{position:'relative'}}>
+<section className="bg-category">
+        <div >
+          <h1>Shop by Category</h1>
+          <div className="row">
+            {categories.map((category, index) => (
+              <div className="col-md-4">
+                <div className="main2-sub" key={index}>
+                  <img style={{ width: '100%' }} src={`assets/img${index + 1}.webp`} alt="" />
+                  <p className="main3-p">{category}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      </div> 
 
               {/* Small screen content */}
             </div>
@@ -279,6 +301,23 @@ function Scroller() {
                   </div>
                 </div>
               </div>
+
+<div style={{position:'relative'}}>
+       <section className="bg-category">
+        <div className="container">
+          <h1>Shop by Category</h1>
+          <div className="row">
+            {categories.map((category, index) => (
+              <div className="col-md-4">
+                <div className="main2-sub" key={index}>
+                  <img style={{ width: '100%' }} src={`assets/img${index + 1}.webp`} alt="" />
+                  <p className="main3-p">{category}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section></div> 
             </>
           )}
         </div>

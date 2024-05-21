@@ -757,6 +757,7 @@ a.main-sub3-btn {
 
     .bg-category {
         padding: 40px 5px;
+        margin-top: 25px;
     }
 
     .bg-category h1 {
@@ -839,8 +840,8 @@ a.main-sub3-btn {
     }
     .scroller-container {
         position: relative;
-        height: auto; 
-        min-height: 256rem;
+        height: 100%; 
+        /* min-height: 200rem; */
         /* overflow: auto; */
       }
     section.stacking-slide a {
@@ -878,7 +879,17 @@ a.main-sub3-btn {
           font-size: 12px;
         }
       }
+  /* Add styles for small screens here */
+ 
 
+  .section {
+    position: relative; 
+    margin-bottom: 20px; 
+  }
+  .element {
+    position: relative; /* Position elements relatively */
+    z-index: 1; /* Adjust the stacking order if needed */
+  }
 
 }
 
