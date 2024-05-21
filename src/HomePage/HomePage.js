@@ -10,14 +10,14 @@ function HomePage() {
     {
       title: 'Buy One and Get The Second 50% Off',
       description: 'On All Speakers and Headphones',
-      link: '', // Replace with your desired link
+      link: '/Speakerhead', // Replace with your desired link
       image: 'assets/Speakers_On_Table_New.webp',
       bottomText: 'Polar Turn5 Portable Speaker'
     },
     {
       title: '25% Off Top Rated Headphones',
       description: 'Explore Limited Time Offers',
-      link: '', // Replace with your desired link
+      link: '/SpecialOffers', // Replace with your desired link
       image: 'assets/Yellow_Headphones.webp',
       bottomText: 'VOLVE Wireless Headphones'
     }
@@ -120,7 +120,7 @@ function HomePage() {
 
             <p>{headline.description}</p>
 
-            <Link to={headline.link}>Shop Now</Link>
+            <a href={headline.link}>Shop Now</a>
             <lable>{headline.bottomText}</lable>
             <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={headline.image} alt="" />
           </section>
