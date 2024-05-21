@@ -12,6 +12,8 @@ export const ViewCart = ({ onClose }) => {
             color: "Dark Grey",
             quantity: 1
         },])
+
+        
         const handleButtonClick = () => {
             onClose(); // Call the onClose function passed from Header component
           };
@@ -61,7 +63,7 @@ export const ViewCart = ({ onClose }) => {
                 <div className='subtotal2'>
                     <h5>Subtotal</h5>
                     <p>₹{cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)}</p>
-                    <NavLink onClick={handleButtonClick} to='/mycart'>View Cart</NavLink>
+                    <a onClick={handleButtonClick} href='/mycart'>View Cart</a>
                 </div>
                      )}
             </div>

@@ -25,6 +25,7 @@ import Speakerhead from './Speakerhead/Speakerhead';
 import { Mycart } from './Mycart/Mycart';
 import { ViewCart } from './Mycart/ViewCart';
 import TermsConditions from './TermsConditions/TermsConditions';
+import Contact from './Help/Contact';
 
 
 function App() {
@@ -59,7 +60,7 @@ function App() {
         <Route path='/RefundPolicy' element={ <RefundPolicy/> }></Route>
         <Route path='/CookiePolicy' element={ <CookiePolicy/> }></Route>
         <Route path='/TermsConditions' element={ <TermsConditions/> }></Route>
-
+        <Route path='/Contact' element={ <Contact/> }></Route>
 
 
       </Routes>

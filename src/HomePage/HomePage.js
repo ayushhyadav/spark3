@@ -70,9 +70,9 @@ function HomePage() {
   ];
 
   return (
-    <div>
+    <div style={{display:'flex',zIndex:1,flex:1,flexDirection:'column'}}>
       <Scroller />
-      <section className="bg-category">
+    <div style={{position:'relative'}}> <section className="bg-category">
         <div className="container">
           <h1>Shop by Category</h1>
           <div className="row">
@@ -86,7 +86,7 @@ function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section></div> 
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -116,7 +116,7 @@ function HomePage() {
       <div style={{ height: '100%' }} className="">
         {headlines.map((headline, index) => (
           <section style={{ width: '100%', height: '100vh' }} key={index} className="stacking-slide">
-            <h2>{headline.title}</h2>
+            <h2 >{headline.title}</h2>
 
             <p>{headline.description}</p>
 

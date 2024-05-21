@@ -9,7 +9,7 @@
 
 section.stacking-slide lable {
     position: absolute;
-    bottom: 7%;
+    bottom: 10%;
     left: 5%;
     color: #f0f0f0;
 }
@@ -294,8 +294,8 @@ section.stacking-slide h2 {
     position: absolute;
     color: #f0f0f0;
     max-width: 450px;
-    margin: 5% 0 0 5%;
-    font-size: 42px;
+    margin: 8% 0 0 5%;
+    font-size: 2.3rem;
     font-weight: 300;
     font-family: 'Font-Helvetica';
 
@@ -813,13 +813,15 @@ a.main-sub3-btn {
 
     section.stacking-slide h2 {
         font-size: 33px;
+        margin-top: 60px;
+        /* margin: 15%; */
     }
 
     .stacking-slide p {
-        top: 18%;
+        top: 28%;
     }
 
-    section.stacking-slide a {
+    section.stacking-slide Link {
         top: 30%;
     }
 
@@ -828,10 +830,11 @@ a.main-sub3-btn {
     }
     .stacking-slide p {
         font-size: 18px;
-        top: 13%;
+        top: 20%;
+        width: 180px;
       }
       section.stacking-slide a {
-        top: 18%;
+        top: 30%;
     }
     section.stacking-slide a {
         padding: 12px 25px;

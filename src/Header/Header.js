@@ -108,7 +108,7 @@ function Header({ cartCount }) {
               <a class="nav-link" href="/help">Help</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/help#contact">Contact</a>
+              <a onClose={handleCloseSidebar} class="nav-link" href="/Contact#contact">Contact</a>
             </li>
             <div class="main-header d-flex align-items-center">
               <div className="header-3">
