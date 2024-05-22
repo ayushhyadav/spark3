@@ -4,7 +4,7 @@ export const SpecialOffers = () => {
     // Define an array of product objects
   const products = [
     
-    { id: 4, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/PJX R30.webp', isSale: true },
+    { id: 4, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/PJXR30.webp', isSale: true },
     { id: 4, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/Sovix PWR20.webp', isSale: true },
     { id: 4, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/Sovixwatch2.webp', isSale: true },
     { id: 4, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/Sovixwatch2.webp', isSale: true },

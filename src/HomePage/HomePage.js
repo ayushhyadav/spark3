@@ -71,8 +71,9 @@ function HomePage() {
 
   return (
     <div style={{display:'flex',zIndex:1,flex:1,flexDirection:'column'}}>
-      <Scroller />
-    <div style={{position:'relative'}}> <section className="bg-category">
+    <div className="Scroller">  <Scroller /></div>
+    <div style={{position:'relative'}}>
+       <section className="bg-category">
         <div className="container">
           <h1>Shop by Category</h1>
           <div className="row">

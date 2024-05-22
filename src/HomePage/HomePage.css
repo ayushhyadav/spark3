@@ -161,7 +161,7 @@ section.stacking-slide lable {
     font-weight: 300;
     max-width: 60px;
     position: absolute;
-    top: 0;
+    top: 10;
     z-index: 1;
     font-family: 'Font-Helvetica-thin';
 }
@@ -757,7 +757,7 @@ a.main-sub3-btn {
 
     .bg-category {
         padding: 40px 5px;
-        margin-top: 25px;
+        /* margin-top: 25px; */
     }
 
     .bg-category h1 {
@@ -838,7 +838,7 @@ a.main-sub3-btn {
       section.stacking-slide a {
         top: 30%;
     }
-    .scroller-container {
+    .scroller {
         position: relative;
         height: 100%; 
         /* min-height: 200rem; */

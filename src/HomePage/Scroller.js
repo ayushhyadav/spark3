@@ -39,7 +39,7 @@ function Scroller() {
       type: "products",
       items: [
         {
-          src: "assets/PJX R30.webp",
+          src: "assets/PJXR30.webp",
           title: "PJX Smartphone 10G 128GB",
           price: "$675.00"
         },
@@ -106,7 +106,7 @@ function Scroller() {
       }
   
       const handleResize = () => {
-        const newIsSmallScreen = window.innerWidth <= 767;
+        const newIsSmallScreen = (window.innerWidth <= 767);
         if (newIsSmallScreen !== isSmallScreen) {
           setIsSmallScreen(newIsSmallScreen);
           window.location.reload(); // Refresh the page whenever the screen size changes
@@ -193,25 +193,66 @@ function Scroller() {
       {headline.type === "image" && (
         <img style={{ width: '100%',height:'90vh', objectFit: 'cover' }} src={headline.image} alt="" />
       )}
+      <div style={{position:'relative'}}>
       {headline.type === "products" && (
-        <div style={{ width: '100%', backgroundColor: 'white', position:'relative',height:'auto' ,padding:20,overflow:'scroll',margin:'0 auto'}} className="">
+        <div style={{ width: '100%', backgroundColor: 'white',height:'auto',padding:20,margin:'0 auto'}} className="Arrivals">
          
             <div style={{fontSize:25,fontWeight:600,marginTop:30}}>New Arrivals</div>
-            <div to='Mobile' style={{ width: '100%', height:'100%', position:'relative',margin:'0 auto' }}>
+            <div to='Mobile' style={{ width: '100%',  position:'relative', }}>
               {headline.items.map((item, idx) => (
-                <div key={idx} className="">
-                  <div style={{position:'absolute',color:'black',zIndex:1}} className="img-btn absolute">SALE</div>
-                  <img src={item.src} alt="" />
+                <div key={idx} className="hedline">
+                  <div style={{position:'absolute',color:'black',zIndex:2}} className="img-btn absolute">SALE</div>
+                  <div
+  style={{
+    backgroundImage: `url(${item.src})`,
+    backgroundSize: 'cover', // or 'contain' depending on your requirement
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    width: '100%', // adjust as needed
+    height: '415px', // adjust as needed
+    display: 'flex', // to center the button
+    justifyContent: 'center', // to center the button horizontally
+    alignItems: 'center' // to center the button vertically
+  }}
+></div>
                   <div className="img-para">
-                    <div>{item.title}</div>
-                    <div>{item.price}</div>
+                    <div style={{fontSize:'14px'}}>{item.title}</div>
+                    <div style={{fontSize:'14px'}}>{item.price}</div>
                   </div>
                 </div>
               ))}
             </div>
         
         </div>
+      )}</div>
+      {/* <div style={{color:"red"}}>
+      {headline.type === "products" && (
+        <div style={{ width: '100%', backgroundColor: 'white',border:'6px solid red' ,padding:20,}} className="Arrivals">
+          <div style={{fontSize:25,fontWeight:600,marginTop:30}}>New Arrivals</div>
+          {headline.items.map((item, idx) => (
+           
+<div
+  
+>
+  <button>SALE</button>
+  <div
+  style={{
+    backgroundImage: `url(${item.src})`,
+    backgroundSize: 'cover', // or 'contain' depending on your requirement
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    width: '100%', // adjust as needed
+    height: '400px', // adjust as needed
+    display: 'flex', // to center the button
+    justifyContent: 'center', // to center the button horizontally
+    alignItems: 'center' // to center the button vertically
+  }}
+></div>
+</div>
+          ))}
+          </div>
       )}
+      </div> */}
     </section>
   ))}
 </div>

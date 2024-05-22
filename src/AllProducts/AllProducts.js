@@ -6,7 +6,7 @@ const AllProducts = () => {
   // Define an array of product objects
   const products = [
     { id: 1, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/PJX 10G.webp', isNew: true, },
-    { id: 2, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/PJX R30.webp', isNew: true },
+    { id: 2, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/PJXR30.webp', isNew: true },
     { id: 3, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/Sovixwatch2.webp', isSale: true },
     { id: 4, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/c837a6_98c43751ef8d4b42b95676b5f949b0e7~mv2.webp', isNew: false },
     { id: 4, name: 'PJX Smartphone 10G, 128GB', price: '$675.00', image: 'assets/c837a6_0668014d3f3a4331bf93d74578294d31~mv2.webp', isSale: true },
