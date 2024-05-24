@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   const categories = [
-    {title: "Cell Phones", link:"/Mobile",}
+    {title: "Cell Phones", link:"/CellPhones",}
     ,  
     {title: "Speakers & Headphones", link:"/Speakerhead",}
     ,
