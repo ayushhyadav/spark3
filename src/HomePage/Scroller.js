@@ -41,22 +41,26 @@ function Scroller() {
         {
           src: "assets/PJXR30.webp",
           title: "PJX Smartphone 10G 128GB",
-          price: "$675.00"
+          price: "$675.00",
+          link:""
         },
         {
           src: "assets/c837a6_fa6693c8376640c480ac169f9f56f55b~mv2.webp",
           title: "Ove Laptop 16\", 512GB",
-          price: "$2,000.00"
+          price: "$2,000.00",
+          link:""
         },
         {
           src: "assets/c837a6_0668014d3f3a4331bf93d74578294d31~mv2.webp",
           title: "Polar Turn5 Portable Speaker",
-          price: "$250.00"
+          price: "$250.00",
+          link:""
         },
         {
           src: "assets/c837a6_53ff9332e5124ed893f347a938f294ad~mv2.webp",
           title: "Polar 360 Mini Portable Speaker",
-          price: "$120.00"
+          price: "$120.00",
+          link:""
         }
       ]
     }
@@ -67,6 +71,15 @@ function Scroller() {
     const [isAnimationSetup, setIsAnimationSetup] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 767);
     const scrollContainerRef = useRef(null);
+    const [hoveredItem, setHoveredItem] = useState(null);
+
+    const handleTouchStart = (index) => {
+      setHoveredItem(index);
+    };
+  
+    const handleTouchEnd = () => {
+      setHoveredItem(null);
+    };
   
     useEffect(() => {
       if (!isAnimationSetup) {
@@ -198,30 +211,50 @@ function Scroller() {
         <div style={{ width: '100%', backgroundColor: 'white',height:'auto',padding:20,margin:'0 auto'}} className="Arrivals">
          
             <div style={{fontSize:25,fontWeight:600,marginTop:30}}>New Arrivals</div>
-            <div to='Mobile' style={{ width: '100%',  position:'relative', }}>
-              {headline.items.map((item, idx) => (
-                <div key={idx} className="hedline">
-                  <div style={{position:'absolute',color:'black',zIndex:2}} className="img-btn absolute">SALE</div>
-                  <div
-  style={{
-    backgroundImage: `url(${item.src})`,
-    backgroundSize: 'cover', // or 'contain' depending on your requirement
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    width: '100%', // adjust as needed
-    height: '415px', // adjust as needed
-    display: 'flex', // to center the button
-    justifyContent: 'center', // to center the button horizontally
-    alignItems: 'center' // to center the button vertically
-  }}
-></div>
-                  <div className="img-para">
-                    <div style={{fontSize:'14px'}}>{item.title}</div>
-                    <div style={{fontSize:'14px'}}>{item.price}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
+             <Link to='Mobile' style={{ width: '100%', position: 'relative' }}>
+      {items.map((item, index) => (
+        <div 
+          key={index} 
+          className="hedline" 
+          onTouchStart={() => handleTouchStart(index)}
+          onTouchEnd={handleTouchEnd}
+          onMouseEnter={() => handleTouchStart(index)}
+          onMouseLeave={handleTouchEnd}
+        >
+          <div
+            style={{
+              position: 'absolute',
+              color: 'black',
+              zIndex: 2,
+              display: (hoveredItem === index || index === hoveredItem) ? 'block' : 'block' // Show SALE label only when item is hovered or touched
+            }}
+            className="img-btn absolute"
+          >
+            SALE
+          </div>
+          <div
+            style={{
+              backgroundImage: `url(${item.src})`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center',
+              width: '100%',
+              height: '415px',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              filter: (hoveredItem === index || index === hoveredItem) ? 'grayscale(0%)' : 'grayscale(100%)', // Apply grayscale when hovered or touched
+              transition: 'filter 0.3s ease' // Smooth transition
+            }}
+          ></div>
+
+          <div className="img-para">
+            <div style={{ fontSize: '14px' }}>{item.title}</div>
+            <div style={{ fontSize: '14px' }}>{item.price}</div>
+          </div>
+        </div>
+      ))}
+    </Link>
         
         </div>
       )}</div>
