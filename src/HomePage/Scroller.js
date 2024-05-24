@@ -1,7 +1,7 @@
 import React, { useRef, useEffect ,useState} from "react";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Link } from "react-router-dom";
+import { Link ,useNavigate } from "react-router-dom";
 
 function Scroller() {
   const items = [
@@ -211,7 +211,7 @@ function Scroller() {
         <div style={{ width: '100%', backgroundColor: 'white',height:'auto',padding:20,margin:'0 auto'}} className="Arrivals">
          
             <div style={{fontSize:25,fontWeight:600,marginTop:30}}>New Arrivals</div>
-             <Link to='Mobile' style={{ width: '100%', position: 'relative' }}>
+            <div  onClick={() => window.location.href = '/Mobile'}  style={{ width: '100%', position: 'relative',textDecoration: 'none' }}>
       {items.map((item, index) => (
         <div 
           key={index} 
@@ -254,7 +254,7 @@ function Scroller() {
           </div>
         </div>
       ))}
-    </Link>
+    </div>
         
         </div>
       )}</div>
