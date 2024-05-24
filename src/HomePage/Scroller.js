@@ -226,6 +226,7 @@ function Scroller() {
               position: 'absolute',
               color: 'black',
               zIndex: 2,
+              padding: "2px 60px 0px 20px",
               display: (hoveredItem === index || index === hoveredItem) ? 'block' : 'block' // Show SALE label only when item is hovered or touched
             }}
             className="img-btn absolute"
