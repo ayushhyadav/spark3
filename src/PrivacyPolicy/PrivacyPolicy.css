@@ -29,3 +29,20 @@
     max-width: 610px;
     float: right;
 }
+.text-bottom20 p {
+    font-weight: 600;
+    color: #323232;
+    font-size: 14px;
+    font-family: 'Font-Helvetica-Thin';
+    max-width: 38%;
+    margin-bottom: 20px;
+    margin-right: 11%;
+    float: right;
+    padding: 28px 0;
+}
+@media screen  and (max-width: 576px){
+    .text-bottom20 p {
+        max-width: 100%;
+        margin-right: auto;
+    }
+}

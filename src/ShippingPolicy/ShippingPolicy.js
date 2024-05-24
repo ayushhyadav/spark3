@@ -20,7 +20,7 @@ const ShippingPolicy = () => {
             </div>
             <hr className='hori-line' />
             <div className='container spaceing-box'>
-                <div className='row mt-5'>
+                <div className='row mt-3'>
                     <div className='col-md-6'>
                         <div className='Conditions-header'>
                             <h2>In general, what should you cover in your Terms & Conditions?</h2>

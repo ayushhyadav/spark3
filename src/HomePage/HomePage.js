@@ -4,20 +4,32 @@ import Scroller from "./Scroller";
 import { Link } from "react-router-dom";
 
 function HomePage() {
-  const categories = ["Cell Phones", "Speakers & Headphones", "Laptops & Tablets"];
+  const categories = [
+    {title: "Cell Phones", link:"/Mobile",}
+    ,  
+    {title: "Speakers & Headphones", link:"/Speakerhead",}
+    ,
+    {title: "Laptops & Tablets", link:"/Laptoptabs",}
+
+ 
+   
+    
+     
+  
+  ];
 
   const headlines = [
     {
       title: 'Buy One and Get The Second 50% Off',
       description: 'On All Speakers and Headphones',
-      link: '/Speakerhead', // Replace with your desired link
+      link: '/Speakerhead', 
       image: 'assets/Speakers_On_Table_New.webp',
       bottomText: 'Polar Turn5 Portable Speaker'
     },
     {
       title: '25% Off Top Rated Headphones',
       description: 'Explore Limited Time Offers',
-      link: '/SpecialOffers', // Replace with your desired link
+      link: '/SpecialOffers', 
       image: 'assets/Yellow_Headphones.webp',
       bottomText: 'VOLVE Wireless Headphones'
     }
@@ -81,7 +93,7 @@ function HomePage() {
               <div className="col-md-4">
                 <div className="main2-sub" key={index}>
                   <img style={{ width: '100%' }} src={`assets/img${index + 1}.webp`} alt="" />
-                  <p className="main3-p">{category}</p>
+                <a href={category.link} className="main3-p">{category.title}</a> 
                 </div>
               </div>
             ))}

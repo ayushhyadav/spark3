@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-12'>
-                        <div className='text-bottom2'>
+                        <div className='text-bottom20'>
                             <p>
                             The explanations and information provided herein are only general explanations, information and samples. You should not rely on this article as legal advice or as recommendations regarding what you should actually do. We recommend that you seek legal advice to help you understand and to assist you in the creation of your privacy policy. 
                             </p>

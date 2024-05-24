@@ -1,0 +1,40 @@
+
+.text-bottom2 {
+    margin: 40px 0;
+}
+
+@media screen and (max-width: 576px) {
+    
+    .term-headings h2 {
+        font-size: 36px;
+    }
+    .term-headings h2 {
+        padding-bottom: 25px;
+    }
+    .conditions-per {
+        width: 100%;
+    }
+    .Conditions-points{
+        width: 100%;
+        padding: 15px 20px;
+    }
+    .Conditions-header h2{
+        margin-bottom: 20px;
+    }
+    .text-bottom2 p {
+        max-width: 100%; 
+        padding: 32px 20px;
+    }
+    .text-bottom p {
+        margin: 15px 0;
+    }
+    .spaceing-box {
+        padding: 0px 0;
+    }
+    .Conditions-header {
+        margin-top: 20px;
+    }
+    .text-bottom2 p {
+        padding: 20px 0;
+    }
+}

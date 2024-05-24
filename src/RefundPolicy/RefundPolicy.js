@@ -23,15 +23,15 @@ const RefundPolicy = () => {
             </div>
             <hr className='hori-line' />
             <div className='container spaceing-box'>
-                <div className='row mt-5'>
+                <div className='row mt-3'>
                     <div className='col-md-12'>
-                        <div className='Conditions-points'>
-                            <div className='text-bottom2'>
-                                <p>
-                                    The explanations and information provided herein are only general explanations, information and samples. You should not rely on this article as legal advice or as recommendations regarding what you should actually do. We recommend that you seek legal advice to help you understand and to assist you in the creation of your refund/return policy.
-                                </p>
-                            </div>
+
+                        <div className='text-bottom2'>
+                            <p>
+                                The explanations and information provided herein are only general explanations, information and samples. You should not rely on this article as legal advice or as recommendations regarding what you should actually do. We recommend that you seek legal advice to help you understand and to assist you in the creation of your refund/return policy.
+                            </p>
                         </div>
+
                     </div>
                 </div>
             </div>

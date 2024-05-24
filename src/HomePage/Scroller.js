@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Scroller() {
   const items = [
     {
-      src: "assets/PJX R30.webp",
+      src: "assets/PJXR30.webp",
       title: "PJX Smartphone 10G 128GB",
       price: "$675.00"
     },
